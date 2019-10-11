@@ -110,7 +110,7 @@ object EvolvableTokenTests : ContractTestCommon() {
 
         @Test
         fun `must be signed by all maintainers`() {
-            val expectedError = "All evolvable token maintainers must sign the create evolvable token transaction."
+            val expectedError = "Only evolvable token maintainers may sign the create evolvable token transaction."
 
             // With 1 maintainer
             transaction {
